@@ -12,6 +12,10 @@ export class DirectivaComponent implements OnInit {
 
   listaCursos: String[] = ['Typescript', 'Javascript', 'Java', 'C#'];
   habilitar: boolean = true;
-  constructor(){}
+  constructor() { }
+
+  setHabilitar(): void {
+    this.habilitar = (this.habilitar == true) ? false : true;
+  }
 
 }
